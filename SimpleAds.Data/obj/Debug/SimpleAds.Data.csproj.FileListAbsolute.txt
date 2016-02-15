@@ -1,0 +1,5 @@
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleAds\SimpleAds.Data\bin\Debug\SimpleAds.Data.dll
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleAds\SimpleAds.Data\bin\Debug\SimpleAds.Data.pdb
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleAds\SimpleAds.Data\obj\Debug\SimpleAds.Data.dll
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleAds\SimpleAds.Data\obj\Debug\SimpleAds.Data.pdb
+c:\users\alexfriedman\documents\visual studio 2013\Projects\SimpleAds\SimpleAds.Data\obj\Debug\SimpleAds.Data.csprojResolveAssemblyReference.cache

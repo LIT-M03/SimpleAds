@@ -1,0 +1,26 @@
+﻿@using SimpleAds.Data;
+@model IEnumerable<Ad>
+
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <a class="btn btn-primary" href="/ads/new">New Ad</a>
+    </div>
+    <div class="col-md-8 col-md-offset-2 well">
+        @foreach (Ad ad in Model)
+        {
+            <a href="/ads/show?id=@ad.Id">
+                <div class="row" style="margin-bottom: 20px; border: 1px solid #40e0d0; border-radius: 25px; padding: 20px;">
+                    <div class="col-md-2">
+                        <img src="/Uploads/@ad.Images.First()" style="height: 100px;" />
+                    </div>
+                    <div class="col-md-8 col-md-offset-1">
+                        <h3>@ad.Title</h3>
+                    </div>
+
+                </div>
+            </a>
+        }
+
+    </div>
+</div>

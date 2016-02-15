@@ -1,0 +1,39 @@
+﻿@model SimpleAds.Models.ShowAdViewModel
+
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 well">
+        @if (Model.ShowDeleteButton)
+        {
+            <button class="btn btn-danger">DELETE MY AD!!</button>
+        }
+        <h2>@Model.Ad.Title</h2>
+        <h4>Listed by: @Model.Ad.Name</h4>
+        <h4>Phone: @Model.Ad.PhoneNumber</h4>
+        <h4>Listed on: @Model.Ad.Date.ToLongDateString()</h4>
+        <p>@Model.Ad.Description</p>
+        <div class="col-md-6 col-md-offset-3">
+            <img src="/Uploads/@Model.Ad.Images.First()" style="height: 300px;" id="mainImage"/>
+        </div>
+        <div class="col-md-8" style="margin-top: 20px;">
+            @foreach (string image in Model.Ad.Images)
+            {
+                <img src="/Uploads/@image" style="height: 100px; margin-left: 5px; cursor: pointer;" class="thumb"/>
+            }
+        </div>
+    </div>
+
+</div>
+
+@section scripts
+{
+    <script>
+        $(function () {
+            $(".thumb").on('click', function () {
+                var src = $(this).attr('src'); //getter
+                $("#mainImage").attr('src', src); //setter
+            });
+        });
+    </script>
+}
+
